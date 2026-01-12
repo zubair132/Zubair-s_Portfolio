@@ -1,16 +1,7 @@
 {
   "version": 2,
-  "name": "zubair-ahmad-portfolio",
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ]
+  "buildCommand": "echo 'Static site - no build needed'",
+  "outputDirectory": ".",
+  "cleanUrls": false,
+  "trailingSlash": false
 }
