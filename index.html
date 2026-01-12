@@ -59,6 +59,31 @@
             -webkit-font-smoothing: antialiased;
         }
 
+        /* ================================================
+           GLOBAL IMAGE OPTIMIZATION FOR ALL DEVICES
+        ================================================ */
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            -webkit-user-select: none;
+            user-select: none;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+
+        /* Force images to load on mobile */
+        .hero-image,
+        .project-image-box img {
+            display: block !important;
+            width: 100% !important;
+            height: auto !important;
+            object-fit: cover !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -786,15 +811,28 @@
             /* Mobile image optimization */
             .hero-image,
             .project-image-box img {
-                width: 100%;
-                height: auto;
-                max-width: 100%;
-                object-fit: cover;
+                width: 100% !important;
+                height: auto !important;
+                max-width: 100% !important;
+                min-height: 200px !important;
+                object-fit: cover !important;
+                display: block !important;
+                visibility: visible !important;
             }
 
             .project-image-box {
-                max-height: 250px;
+                width: 100%;
+                min-height: 200px;
+                max-height: 280px;
                 overflow: hidden;
+                background: var(--dark-card);
+                position: relative;
+            }
+
+            .hero-image-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             .hero-title {
@@ -904,7 +942,7 @@
            ULTRA PREMIUM ENHANCEMENTS
         ================================================ */
 
-        /* Glowing borders on hover */
+        /* Subtle glowing borders on hover - improved readability */
         .project-premium-card::after {
             content: '';
             position: absolute;
@@ -916,12 +954,27 @@
             border-radius: 28px;
             opacity: 0;
             z-index: -1;
-            transition: opacity 0.3s ease;
-            filter: blur(10px);
+            transition: opacity 0.4s ease;
+            filter: blur(15px);
         }
 
         .project-premium-card:hover::after {
-            opacity: 0.7;
+            opacity: 0.3;
+        }
+
+        /* Improve text visibility on hover */
+        .project-premium-card:hover .project-title-premium {
+            color: #ffffff;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .project-premium-card:hover .project-desc {
+            color: #e5e5e5;
+        }
+
+        .project-premium-card:hover .project-category-tag {
+            background: var(--accent);
+            color: #ffffff;
         }
 
         /* Shimmer effect on hero title */
@@ -1074,20 +1127,9 @@
             background: linear-gradient(135deg, #6366f1, #8b5cf6);
         }
 
-        /* Loading animation for images */
+        /* Loading animation for images - disabled for mobile compatibility */
         .project-image-box img {
-            animation: image-load 0.6s ease-out;
-        }
-
-        @keyframes image-load {
-            from {
-                opacity: 0;
-                filter: blur(10px);
-            }
-            to {
-                opacity: 1;
-                filter: blur(0);
-            }
+            /* animation disabled to ensure mobile loading */
         }
     </style>
 </head>
@@ -1591,27 +1633,36 @@
             });
         }, observerOptions);
 
-        // Observe all project cards and service cards
+        // Observe all project cards and service cards - with mobile-friendly animations
         document.querySelectorAll('.project-premium-card, .service-card, .tech-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-
-        // Parallax effect for hero section
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const heroContent = document.querySelector('.hero-content');
-            const heroImage = document.querySelector('.hero-image-container');
-
-            if (heroContent && scrolled < window.innerHeight) {
-                heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
-                if (heroImage) {
-                    heroImage.style.transform = `translateY(${scrolled * 0.2}px)`;
-                }
+            // Only apply animations on larger screens to ensure mobile compatibility
+            if (window.innerWidth > 768) {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            } else {
+                // On mobile, ensure elements are immediately visible
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
             }
         });
+
+        // Parallax effect for hero section - disabled on mobile for performance
+        if (window.innerWidth > 768) {
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const heroContent = document.querySelector('.hero-content');
+                const heroImage = document.querySelector('.hero-image-container');
+
+                if (heroContent && scrolled < window.innerHeight) {
+                    heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
+                    if (heroImage) {
+                        heroImage.style.transform = `translateY(${scrolled * 0.2}px)`;
+                    }
+                }
+            });
+        }
 
         // Add cursor glow effect
         const createGlowEffect = () => {
