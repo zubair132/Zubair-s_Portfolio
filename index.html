@@ -1,645 +1,1651 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Zubair Ahmad Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zubair Ahmad - Senior React Native Developer with 5+ years of experience in AI-powered mobile apps">
+    <title>Zubair Ahmad | Senior React Native Developer | AI & Cross-Platform Expert</title>
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ================================================
+           ULTRA PREMIUM PORTFOLIO - LUXURY DESIGN
+        ================================================ */
 
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --accent: #f59e0b;
+            --dark: #0a0a0f;
+            --dark-surface: #13131a;
+            --dark-card: #1a1a24;
+            --text-primary: #ffffff;
+            --text-secondary: #a8a8b3;
+            --text-muted: #6b6b7a;
+            --border: #2a2a35;
+            --success: #10b981;
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-gold: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            --gradient-purple: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 15px 50px rgba(0, 0, 0, 0.5);
+            --shadow-xl: 0 25px 70px rgba(0, 0, 0, 0.6);
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<style>
+        html {
+            scroll-behavior: smooth;
+        }
 
-/*======================================
-//--//-->   ABOUT
-======================================*/
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--dark);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
 
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
 
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
+        /* ================================================
+           PREMIUM NAVIGATION
+        ================================================ */
 
-.about-mf .about-img img {
-  margin-left: 10px;
-}
+        .premium-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(10, 10, 15, 0.9);
+            backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
+        .premium-nav.scrolled {
+            background: rgba(10, 10, 15, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
 
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
 
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
+        .nav-logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+        }
 
+        .nav-menu {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+            align-items: center;
+        }
 
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
+        .nav-menu a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
 
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-gold);
+            transition: width 0.3s ease;
+        }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
+        .nav-menu a:hover {
+            color: var(--text-primary);
+        }
 
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
 
+        .nav-cta {
+            padding: 0.75rem 1.5rem;
+            background: var(--gradient-gold);
+            border-radius: 50px;
+            font-weight: 600;
+            color: white !important;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+        }
 
-/* project image zoom effect */
+        .nav-cta::after {
+            display: none;
+        }
 
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(245, 158, 11, 0.6);
+        }
 
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
+        /* ================================================
+           LUXURY HERO SECTION
+        ================================================ */
 
+        .luxury-hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 8rem 2rem 4rem;
+            background: var(--dark);
+            overflow: hidden;
+        }
 
-</style>
+        .luxury-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 20s ease-in-out infinite;
+        }
 
+        .luxury-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 25s ease-in-out infinite reverse;
+        }
 
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Zubair Ahmad</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+        }
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <!-- <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li> -->
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/zubair.jpg);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Zubair Ahmad</span></h1>
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+        .hero-content {
+            animation: fadeInLeft 1s ease-out;
+        }
 
-						<script>
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 2rem;
+        }
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--success);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
 
-						// Create an array of typing text
-						const typingTexts = [
-						'React Native Developer  ',
-						'Computer Engineer ',
-						//'NativeFrame Designs   ',
-						];
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 50); // Increase the delay to slow down the typing animation
-						}
+        .hero-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -2px;
+        }
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 100);
-						}
+        .gradient-text {
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
 
-						</script>
+        .hero-description {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            line-height: 1.8;
+        }
 
-						<br>
-						<br>
-			            <!-- <h2>Senior React Native Developer</h2> -->
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/zubair-ahmad-a54633283" class="btn btn-primary py-3 px-4">linkedin</a> 
-							<a href="https://github.com/zubair132" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
 
+        .stat-item {
+            text-align: left;
+        }
 
-<!-- 
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section"> -->
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/zubair.jpg" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Zubair Ahmad</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Senior React Native Developer</span></p>
-										<p><span class="title-s">Experience: </span> <span>3 Years 3 Months</span></p>
-										<p><span class="title-s">Address: </span> <span>Lahore,Pakistan</span></p>
-									  </div>
-									</div>
-								  </div>
+        .stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            display: block;
+            line-height: 1;
+        }
 
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>React</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span></span>Typescript<span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Javascript</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>API Integration</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>UI/UX</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>I am a skilled React Native developer with three years of hands-on experience building hybrid mobile applications for iOS and Android. My expertise lies in creating seamless, performance-driven apps with a strong focus on user experience and modern design principles. I excel in utilizing native modules and APIs to deliver robust, scalable solutions that meet diverse business needs.
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
 
-									With a solid foundation in front-end development and proficiency in JavaScript and TypeScript, I have a proven track record of integrating complex APIs, managing state, and delivering polished UI/UX designs. I am passionate about pushing the boundaries of mobile technology to build intuitive and feature-rich applications that enhance user engagement.
-									</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Key Skills: </span> <span>   React Native, JavaScript, TypeScript</span></li>
-									<li class="d-flex"><span>Domain: </span> <span>   React Native Developer & Mobile App Development Specialist</span></li>
-									<li class="d-flex"><span>Education: </span> <span>   Bachelor of Engineering</span></li>
-									<li class="d-flex"><span>Languages: </span> <span>   English, Urdu</span></li>
-									<li class="d-flex"><span>BI Tools: </span> <span>   Microsoft Power BI, Metabase, Looker API</span></li>
-									<li class="d-flex"><span>Other Skills: </span> <span>   UI/UX, HTML, CSS, API Integration</span></li>
-									<li class="d-flex"><span>Interests: </span> <span>   Traveling, Nature Photography, Learning</span></li>
-									
-									
-								</ul>
-							</div>
-						</div>
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
 
+        .btn-premium, .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1.25rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
 
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<!-- <p class="mb-4">
-									<span class="number" data-number="30">23</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p> -->
-								<!-- <p><a href="in/zubair-ahmad-a54633283" class="btn btn-primary py-3 px-3">LinkedIn</a></p> -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-<!-- 
+        .btn-premium {
+            background: var(--gradient-gold);
+            color: white;
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+        }
 
+        .btn-premium:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(245, 158, 11, 0.6);
+        }
 
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5"> -->
-          <!-- <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>Senior React Native worked experience for three years,includes high quality hybrid applications for Iphone and Android. </div>
-        </div> -->
+        .btn-outline {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--border);
+        }
 
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2022-Present</span>
-						<h2> React Native Developer</h2>
-						<span class="position">Hasbisoft</span>
-						<p class="mt-4" >Hasbisoft is a mobile and web application development company. Hasbisoft serves diverse operational areas through the provision of client oriented software, mobile applications developed for Android and iOS and web applications.
-							<ul>
-								<li> I have been working as a Full time React Natuve developer leveraging my strong skills in mobile app development.</li>
-								<li> I have been working on the development of mobile applications with active use of the framework – React Native, including developing the applications for iOS and Android simultaneously, with good knowledge of JavaScript,Typescript and the state management (Redux/Context API), and making use of API.</li>
-								<!-- <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li> -->
-							</ul>
-						</p>
-					</div>
+        .btn-outline:hover {
+            border-color: var(--accent);
+            background: rgba(245, 158, 11, 0.1);
+        }
 
-				</div>
+        .hero-image-container {
+            position: relative;
+            animation: fadeInRight 1s ease-out;
+        }
 
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2021-2022</span>
-						<h2>Internship As a React Native Developer </h2>
-						<span class="position">hasbisoft</span>
-						<p class="mt-4">Hasbisoft is a mobile and web application development company. Hasbisoft serves diverse operational areas through the provision of client oriented software, mobile applications developed for Android and iOS and web applications.
-							<ul>
-								<li>As a student i worked on App Design,development and testing.</li>
-								<li> learn about bulid responsive and scalable apps fior both iOS and Andriod demonstrates strong problem-solving skills..</li>
-								<!-- <li>.</li> -->
-							</ul>
-						</p>
-					</div>
+        .hero-image-wrapper {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+        }
 
-				</div>
-			</div>
+        .hero-image-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.3;
+            animation: pulse-bg 8s ease-in-out infinite;
+        }
 
-		<br>
-		<br>
+        @keyframes pulse-bg {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.1); }
+        }
 
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2020-2024</span>
-    					<h2>Bachelor of Engineering</h2>
-    					<span class="position">Comsats University Lahore </span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-    			</div>
+        .hero-image {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 5px solid var(--border);
+            object-fit: cover;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+            animation: float-image 6s ease-in-out infinite;
+        }
 
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2017-2019</span>
-    					<h2>Higher Secondary School</h2>
-    					<span class="position">Higher Secondary School</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-				</div>
-    		</div>
-<!-- 
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
-    	</div> -->
-    </section>
+        @keyframes float-image {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
 
-   
-	<section class="ftco-section" id="project-section">
-		<div class="container">
-		  <div class="row justify-content-center mb-5 pb-5">
-			<div class="col-md-7 heading-section text-center ftco-animate">
-			  <h1 class="big big-2">Projects</h1>
-			  <h2 class="mb-4">My React Native Projects</h2>
-			  <p>Here are some of my React Native projects, displayed with screenshots and descriptions.</p>
-			</div>
-		  </div>
-	  
-		  <!-- Projects displayed as images with descriptions -->
-		  <div class="row d-flex">
-			
-			<!-- Project 1: SmartCUI -->
-			<div class="col-md-4 d-flex ftco-animate">
-			  <div class="blog-entry justify-content-end">
-				<div class="block-20 zoom-effect" style="background-image: url('images/cui.jpg');"></div>
-				<div class="text mt-3 float-right d-block">
-				  <h3 class="heading">SmartCUI</h3>
-				  <p>Overview: This app offers personalized interview preparation for students, faculty, and alumni. It includes sections for resume upload, skill progress, job recommendations, and interview tracking.</p>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- Project 2: Petzap -->
-			<div class="col-md-4 d-flex ftco-animate">
-			  <div class="blog-entry justify-content-end">
-				<div class="block-20 zoom-effect" style="background-image: url('images/petz.jpg');"></div>
-				<div class="text mt-3 float-right d-block">
-				  <h3 class="heading">Petzap</h3>
-				  <p>Overview: A social platform for pet lovers. Users can create pet profiles, share photos, explore posts, and find pet-mates. Includes user account settings and privacy controls.</p>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- Project 3: Digital Twin System -->
-			<div class="col-md-4 d-flex ftco-animate">
-			  <div class="blog-entry justify-content-end">
-				<div class="block-20 zoom-effect" style="background-image: url('images/goat.jpg');"></div>
-				<div class="text mt-3 float-right d-block">
-				  <h3 class="heading">Digital Twin System</h3>
-				  <p>Overview: This app is designed for farmers and farm owners to monitor the health of their goats. It features a simple and secure login process, account creation, and password reset functionalities. The app's user-friendly interface ensures easy navigation for managing goat health records and monitoring farm data.</p>
-				</div>
-			  </div>
-			</div>
-		  </div>
-	  
-		  <div class="row d-flex">
-			<!-- Project 4: Food App -->
-			<div class="col-md-4 d-flex ftco-animate">
-			  <div class="blog-entry justify-content-end">
-				<div class="block-20 zoom-effect" style="background-image: url('images/foodie.jpg');"></div>
-				<div class="text mt-3 float-right d-block">
-				  <h3 class="heading">Food App</h3>
-				  <p>Overview: This food ordering app features a lively splash screen with a modern design. It includes interactive elements such as a QR code scanner for quick menu access, a "Get Started" button to guide users through the onboarding process, and the ability to browse various food categories, customize orders, and track delivery in real time. Users can also save their favorite meals for easy reordering and receive notifications about special offers and promotions.</p>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- Project 5: Car Marketplace -->
-			<div class="col-md-4 d-flex ftco-animate">
-			  <div class="blog-entry justify-content-end">
-				<div class="block-20 zoom-effect" style="background-image: url('images/cars.jpg');"></div>
-				<div class="text mt-3 float-right d-block">
-				  <h3 class="heading">Car Marketplace</h3>
-				  <p>Overview: A car marketplace app that allows users to browse, search, and explore various car models. It includes user login, chat functionality, car recommendations, and transaction history. Features seamless navigation with a modern interface.</p>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- Project 6: Scripture Reading App -->
-			<div class="col-md-4 d-flex ftco-animate">
-			  <div class="blog-entry justify-content-end">
-				<div class="block-20 zoom-effect" style="background-image: url('images/talaim.jpg');"></div>
-				<div class="text mt-3 float-right d-block">
-				  <h3 class="heading">Scripture Reading App</h3>
-				  <p>Overview: This app facilitates reading religious scriptures, offering daily reading progress tracking, random verse selection, and categorized chapters. Users can view their progress and toggle between detailed or brief views of scripture readings.</p>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </section>
-	  
-	  
-	 <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="20">0</strong>
-                <span>Achievements</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="30">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="1000">0</strong>
-                <span>Mentored Students</span>
-              </div>
-            </div>
-          </div> -->
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
+        .floating-badge {
+            position: absolute;
+            background: var(--dark-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 1rem 1.5rem;
+            backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-lg);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .badge-1 {
+            top: 10%;
+            right: -10%;
+        }
+
+        .badge-2 {
+            bottom: 20%;
+            left: -10%;
+            animation-delay: 2s;
+        }
+
+        .badge-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-purple);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge-text {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .badge-subtext {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* ================================================
+           SERVICES SECTION
+        ================================================ */
+
+        .premium-section {
+            padding: 8rem 2rem;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 5rem;
+        }
+
+        .section-badge {
+            display: inline-block;
+            padding: 0.5rem 1.25rem;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 50px;
+            color: var(--primary);
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+        }
+
+        .section-description {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: var(--dark-card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 3rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 60px rgba(99, 102, 241, 0.3);
+        }
+
+        .service-card:hover::before {
+            opacity: 0.03;
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-purple);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-features {
+            list-style: none;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-features li {
+            padding: 0.5rem 0;
+            padding-left: 2rem;
+            color: var(--text-secondary);
+            position: relative;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        /* ================================================
+           PROJECTS SECTION - ULTRA MODERN
+        ================================================ */
+
+        .projects-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .project-premium-card {
+            background: var(--dark-card);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .project-premium-card:hover {
+            transform: translateY(-15px);
+            border-color: var(--primary);
+            box-shadow: 0 25px 70px rgba(99, 102, 241, 0.4);
+        }
+
+        .project-image-box {
+            position: relative;
+            width: 100%;
+            padding-top: 60%;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+        }
+
+        .project-image-box img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .project-premium-card:hover .project-image-box img {
+            transform: scale(1.1);
+        }
+
+        .project-badge-premium {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            z-index: 10;
+        }
+
+        .project-content-box {
+            padding: 2.5rem;
+        }
+
+        .project-category-tag {
+            color: var(--primary);
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .project-title-premium {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .project-desc {
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .tech-tag {
+            padding: 0.5rem 1.25rem;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .tech-tag:hover {
+            background: rgba(99, 102, 241, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* ================================================
+           TECH STACK SECTION
+        ================================================ */
+
+        .tech-stack-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tech-item {
+            background: var(--dark-card);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .tech-item:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .tech-item i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+            background: var(--gradient-purple);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tech-item span {
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        /* ================================================
+           RESPONSIVE DESIGN
+        ================================================ */
+
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-image-wrapper {
+                width: 400px;
+                height: 400px;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .luxury-hero {
+                padding: 6rem 1.5rem 3rem;
+            }
+
+            .hero-image-wrapper {
+                width: 300px;
+                height: 300px;
+            }
+
+            .premium-section {
+                padding: 5rem 1.5rem;
+            }
+
+            .projects-showcase {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-badge {
+                display: none;
+            }
+        }
+
+        /* ================================================
+           ANIMATIONS
+        ================================================ */
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Footer */
+        .premium-footer {
+            background: var(--dark-surface);
+            border-top: 1px solid var(--border);
+            padding: 4rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: var(--dark-card);
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--gradient-purple);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-5px);
+        }
+
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* ================================================
+           ULTRA PREMIUM ENHANCEMENTS
+        ================================================ */
+
+        /* Glowing borders on hover */
+        .project-premium-card::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, #f59e0b, #6366f1, #8b5cf6);
+            border-radius: 28px;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 0.3s ease;
+            filter: blur(10px);
+        }
+
+        .project-premium-card:hover::after {
+            opacity: 0.7;
+        }
+
+        /* Shimmer effect on hero title */
+        @keyframes shimmer {
+            0% {
+                background-position: -1000px 0;
+            }
+            100% {
+                background-position: 1000px 0;
+            }
+        }
+
+        .hero-title {
+            background-image: linear-gradient(
+                90deg,
+                #fff 0%,
+                #f59e0b 50%,
+                #fff 100%
+            );
+            background-size: 2000px 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 8s linear infinite;
+        }
+
+        /* Glow on buttons */
+        .btn-premium::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn-premium:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Enhanced floating badges */
+        .floating-badge {
+            backdrop-filter: blur(20px) saturate(180%);
+            background: rgba(26, 26, 36, 0.8);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            box-shadow: 0 8px 32px rgba(245, 158, 11, 0.2);
+        }
+
+        /* Gradient text on service icons */
+        .service-icon {
+            background: linear-gradient(135deg, #f59e0b 0%, #6366f1 50%, #8b5cf6 100%);
+            background-size: 200% 200%;
+            animation: gradient-shift 3s ease infinite;
+        }
+
+        @keyframes gradient-shift {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        /* Tech item glow */
+        .tech-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tech-item::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .tech-item:hover::before {
+            opacity: 1;
+        }
+
+        /* Scroll progress indicator */
+        #scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, #f59e0b, #6366f1);
+            z-index: 10000;
+            transition: width 0.1s ease;
+        }
+
+        /* Premium badge pulse */
+        .section-badge {
+            animation: pulse-badge 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-badge {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+            }
+        }
+
+        /* Card reveal animation */
+        @keyframes card-reveal {
+            from {
+                opacity: 0;
+                transform: perspective(1000px) rotateY(-15deg);
+            }
+            to {
+                opacity: 1;
+                transform: perspective(1000px) rotateY(0deg);
+            }
+        }
+
+        /* Selection styling */
+        ::selection {
+            background: rgba(245, 158, 11, 0.3);
+            color: var(--text-primary);
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--dark);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #f59e0b, #6366f1);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+        }
+
+        /* Loading animation for images */
+        .project-image-box img {
+            animation: image-load 0.6s ease-out;
+        }
+
+        @keyframes image-load {
+            from {
+                opacity: 0;
+                filter: blur(10px);
+            }
+            to {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Premium Navigation -->
+    <nav class="premium-nav">
+        <div class="nav-container">
+            <div class="nav-logo">Zubair Ahmad</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#tech">Tech Stack</a></li>
+                <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+            </ul>
         </div>
-      </div>
-	
-	  <!-- <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)"> -->
-			 <div class="container">
-				<!-- <div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
-						<br>
-						<p><a href="https://github.com/rishabhnmishra" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div> -->
-			 </div>
-		</div>
-	</section> 
+    </nav>
 
+    <!-- Luxury Hero Section -->
+    <section id="home" class="luxury-hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    Available for Freelance & Full-time
+                </div>
 
+                <h1 class="hero-title">
+                    Senior <span class="gradient-text">React Native</span><br>
+                    Developer
+                </h1>
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<!-- <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)"> -->
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
-          </div>
+                <p class="hero-subtitle">
+                    Building AI-Powered Mobile Solutions
+                </p>
+
+                <p class="hero-description">
+                    5+ years of experience crafting high-performance, scalable mobile applications for iOS and Android.
+                    Specialized in AI integration, real-time features, and cross-platform development.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-premium">
+                        <i class="fas fa-rocket"></i>
+                        View My Work
+                    </a>
+                    <a href="https://www.linkedin.com/in/zubair-ahmad-a54633283" target="_blank" class="btn-outline">
+                        <i class="fab fa-linkedin"></i>
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-bg"></div>
+                    <img src="images/Zubair.jpeg" alt="Zubair Ahmad - Senior React Native Developer" class="hero-image">
+
+                    <div class="floating-badge badge-1">
+                        <div class="badge-icon">🚀</div>
+                        <div class="badge-text">React Native</div>
+                        <div class="badge-subtext">Expert</div>
+                    </div>
+
+                    <div class="floating-badge badge-2">
+                        <div class="badge-icon">🤖</div>
+                        <div class="badge-text">AI Integration</div>
+                        <div class="badge-subtext">Specialist</div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Lahore,Pakistan</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101"> +923330902222</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">zubbiirana@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Availability</h3>
-	            <p>Open to freelance projects and full-time opportunities</p>
-	          </div>
-          </div>
+    <!-- Services Section -->
+    <section id="services" class="premium-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">What I Offer</span>
+                <h2 class="section-title">Premium Development Services</h2>
+                <p class="section-description">
+                    From MVP to full-scale enterprise applications, I deliver solutions that scale with your business
+                </p>
+            </div>
 
-		  <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/zubair-ahmad-a54633283"><span class="icon-linkedin"></span></a></li>  
-					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishab"><span class="icon-twitter"></span></a></li> -->
-					  <li class="ftco-animate"><a href="https://www.facebook.com/zubairahmad3336261?mibextid=ZbWKwL"><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/zubair_ahmad_rajput/profilecard/?igsh=eHVobDgwdDdhMm1v"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile App Development</h3>
+                    <p>Full-cycle custom mobile app development for iOS and Android using React Native, Flutter, Swift, and Kotlin</p>
+                    <ul class="service-features">
+                        <li>Cross-platform solutions</li>
+                        <li>Native iOS & Android apps</li>
+                        <li>Responsive UI/UX design</li>
+                        <li>App Store deployment</li>
+                    </ul>
+                </div>
 
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>AI & ML Integration</h3>
+                    <p>Intelligent apps with chatbots, GPT integration, machine learning, and predictive analytics</p>
+                    <ul class="service-features">
+                        <li>AI Chatbots & voice recognition</li>
+                        <li>GPT & NLP integration</li>
+                        <li>Machine learning models</li>
+                        <li>Predictive analytics</li>
+                    </ul>
+                </div>
 
- 
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <!-- <p>Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Real-Time Features</h3>
+                    <p>Live chat, push notifications, real-time data synchronization using WebSockets and Firebase</p>
+                    <ul class="service-features">
+                        <li>Live chat & messaging</li>
+                        <li>Push notifications</li>
+                        <li>Real-time data sync</li>
+                        <li>WebSocket integration</li>
+                    </ul>
+                </div>
 
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Implementation</h3>
+                    <p>Convert Figma, Sketch, or Adobe XD designs into pixel-perfect mobile applications</p>
+                    <ul class="service-features">
+                        <li>Figma to React Native</li>
+                        <li>Material Design & iOS HIG</li>
+                        <li>Responsive layouts</li>
+                        <li>Smooth animations</li>
+                    </ul>
+                </div>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>MVP Development</h3>
+                    <p>Fast, lean prototypes to validate your idea and get to market quickly</p>
+                    <ul class="service-features">
+                        <li>Rapid prototyping</li>
+                        <li>Core feature focus</li>
+                        <li>Market validation</li>
+                        <li>Scalable architecture</li>
+                    </ul>
+                </div>
 
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>App Maintenance</h3>
+                    <p>Debugging, optimization, code refactoring, and ongoing support</p>
+                    <ul class="service-features">
+                        <li>Bug fixing & debugging</li>
+                        <li>Performance optimization</li>
+                        <li>Code refactoring</li>
+                        <li>Feature updates</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+    <!-- Projects Section -->
+    <section id="projects" class="premium-section" style="background: var(--dark-surface);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    Showcasing enterprise-grade applications with AI/ML, real-time systems, and modern architecture
+                </p>
+            </div>
+
+            <div class="projects-showcase">
+
+                <!-- Project 1: CattleCare -->
+                <div class="project-premium-card">
+                    <div class="project-image-box">
+                        <img src="images/CattleCare-project.jpeg" alt="CattleCare App">
+                        <div class="project-badge-premium">AI/ML Powered</div>
+                    </div>
+                    <div class="project-content-box">
+                        <span class="project-category-tag">Full-Stack Development</span>
+                        <h3 class="project-title-premium">CattleCare</h3>
+                        <p class="project-desc">
+                            Smart livestock management with AI-powered health monitoring, real-time tracking, and predictive analytics.
+                            Multi-user portals for farmers, doctors, and owners with live status updates and comprehensive dashboards.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Real-Time</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Floty.ai -->
+                <div class="project-premium-card">
+                    <div class="project-image-box">
+                        <img src="images/Floty-project.jpeg" alt="Floty.ai Fleet Management">
+                        <div class="project-badge-premium">Enterprise</div>
+                    </div>
+                    <div class="project-content-box">
+                        <span class="project-category-tag">Enterprise Solution</span>
+                        <h3 class="project-title-premium">Floty.ai</h3>
+                        <p class="project-desc">
+                            AI-powered fleet management serving 500+ companies with 99.9% uptime. GPS tracking, smart routing,
+                            predictive maintenance, driver analytics. Achieved 25% fuel savings across 1M+ miles.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">GPS</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">AI Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Scanner App -->
+                <div class="project-premium-card">
+                    <div class="project-image-box">
+                        <img src="images/Scaner-project.png" alt="QR & Barcode Scanner">
+                        <div class="project-badge-premium">Utility App</div>
+                    </div>
+                    <div class="project-content-box">
+                        <span class="project-category-tag">Mobile Utility</span>
+                        <h3 class="project-title-premium">QR & Barcode Scanner</h3>
+                        <p class="project-desc">
+                            Fast, lightweight scanner with real-time QR and barcode detection. Instant decoding,
+                            efficient camera integration, and optimized performance for seamless user experience.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Camera API</span>
+                            <span class="tech-tag">Real-Time</span>
+                            <span class="tech-tag">OCR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Smart CUI -->
+                <div class="project-premium-card">
+                    <div class="project-image-box">
+                        <img src="images/CUI-project.jpeg" alt="Smart CUI">
+                        <div class="project-badge-premium">EdTech</div>
+                    </div>
+                    <div class="project-content-box">
+                        <span class="project-category-tag">EdTech Platform</span>
+                        <h3 class="project-title-premium">Smart CUI</h3>
+                        <p class="project-desc">
+                            Interview preparation platform with resume uploads, skill tracking, AI job recommendations,
+                            chatbot assistance, and Firebase real-time sync for seamless career development.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">AI Chatbot</span>
+                            <span class="tech-tag">Mapbox</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Petzapp -->
+                <div class="project-premium-card">
+                    <div class="project-image-box">
+                        <img src="images/Petzapp-project.png" alt="Petzapp Social Platform">
+                        <div class="project-badge-premium">Social</div>
+                    </div>
+                    <div class="project-content-box">
+                        <span class="project-category-tag">Social Platform</span>
+                        <h3 class="project-title-premium">Petzapp</h3>
+                        <p class="project-desc">
+                            Social platform for pet lovers with profiles, photo sharing, community posts,
+                            pet-mate matching, and privacy controls for an engaging user experience.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Social Features</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Teilim TR -->
+                <div class="project-premium-card">
+                    <div class="project-image-box">
+                        <img src="images/Teilim-project.jpeg" alt="Teilim TR - Spiritual Psalms App">
+                        <div class="project-badge-premium">Religious & Inspirational</div>
+                    </div>
+                    <div class="project-content-box">
+                        <span class="project-category-tag">Religious & Inspirational App</span>
+                        <h3 class="project-title-premium">Teilim TR</h3>
+                        <p class="project-desc">
+                            Spiritual Psalms app bringing the Book of Psalms (Tehillim) to users for daily devotion. Features chapter-wise reading,
+                            daily progress tracking, favorites, and structured reading plans (7-day or 30-day). Offers a deeply personal experience
+                            with spiritual guidance and clean UI design for both iOS and Android.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">iOS Development</span>
+                            <span class="tech-tag">Android App</span>
+                            <span class="tech-tag">Custom App</span>
+                            <span class="tech-tag">UI Design</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="premium-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Technologies</span>
+                <h2 class="section-title">Tech Stack & Tools</h2>
+                <p class="section-description">
+                    Mastering modern technologies to build world-class mobile applications
+                </p>
+            </div>
+
+            <div class="tech-stack-grid">
+                <div class="tech-item">
+                    <i class="fab fa-react"></i>
+                    <span>React Native</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-code"></i>
+                    <span>TypeScript</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-node"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-fire"></i>
+                    <span>Firebase</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-aws"></i>
+                    <span>AWS</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>MongoDB</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-figma"></i>
+                    <span>Figma</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-brain"></i>
+                    <span>AI/ML</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-android"></i>
+                    <span>Android</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-apple"></i>
+                    <span>iOS</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-plug"></i>
+                    <span>REST API</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="premium-section" style="background: var(--dark-surface);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Let's Build Something Amazing</h2>
+                <p class="section-description">
+                    Available for freelance projects and full-time opportunities. Let's turn your vision into reality.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
+                    <div style="text-align: center;">
+                        <div class="service-icon" style="margin: 0 auto 1rem;">📧</div>
+                        <div style="color: var(--text-secondary); margin-bottom: 0.5rem;">Email</div>
+                        <div style="color: var(--text-primary); font-weight: 600;">zubbiirana@gmail.com</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="service-icon" style="margin: 0 auto 1rem;">📱</div>
+                        <div style="color: var(--text-secondary); margin-bottom: 0.5rem;">Phone</div>
+                        <div style="color: var(--text-primary); font-weight: 600;">+92 333 0902222</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="service-icon" style="margin: 0 auto 1rem;">📍</div>
+                        <div style="color: var(--text-secondary); margin-bottom: 0.5rem;">Location</div>
+                        <div style="color: var(--text-primary); font-weight: 600;">Lahore, Pakistan</div>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://www.linkedin.com/in/zubair-ahmad-a54633283" target="_blank" class="btn-premium">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/zubair132" target="_blank" class="btn-outline">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~01ed53e743c74e4938" target="_blank" class="btn-outline">
+                        <i class="fas fa-briefcase"></i> Upwork
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="premium-footer">
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/zubair-ahmad-a54633283" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/zubair132" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.facebook.com/zubairahmad3336261" target="_blank" class="social-link">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/zubair_ahmad_rajput" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p class="footer-text">
+            © 2026 Zubair Ahmad. All rights reserved. | Built with ❤️ & React Native expertise
+        </p>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.premium-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add intersection observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all project cards and service cards
+        document.querySelectorAll('.project-premium-card, .service-card, .tech-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroContent = document.querySelector('.hero-content');
+            const heroImage = document.querySelector('.hero-image-container');
+
+            if (heroContent && scrolled < window.innerHeight) {
+                heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
+                if (heroImage) {
+                    heroImage.style.transform = `translateY(${scrolled * 0.2}px)`;
+                }
+            }
+        });
+
+        // Add cursor glow effect
+        const createGlowEffect = () => {
+            const glow = document.createElement('div');
+            glow.className = 'cursor-glow';
+            glow.style.cssText = `
+                position: fixed;
+                width: 600px;
+                height: 600px;
+                border-radius: 50%;
+                background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 70%);
+                pointer-events: none;
+                z-index: 9999;
+                transform: translate(-50%, -50%);
+                transition: opacity 0.3s ease;
+                opacity: 0;
+            `;
+            document.body.appendChild(glow);
+
+            document.addEventListener('mousemove', (e) => {
+                glow.style.left = e.clientX + 'px';
+                glow.style.top = e.clientY + 'px';
+                glow.style.opacity = '1';
+            });
+
+            document.addEventListener('mouseleave', () => {
+                glow.style.opacity = '0';
+            });
+        };
+
+        // Scroll progress indicator
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('scroll-progress').style.width = scrolled + '%';
+        });
+
+        // Initialize on load
+        window.addEventListener('load', () => {
+            createGlowEffect();
+
+            // Add stagger animation to stats
+            const stats = document.querySelectorAll('.stat-item');
+            stats.forEach((stat, index) => {
+                stat.style.animation = `fadeInUp 0.8s ease-out ${index * 0.1}s both`;
+            });
+
+            // Animate numbers counting up
+            const animateValue = (element, start, end, duration) => {
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    const value = Math.floor(progress * (end - start) + start);
+                    element.textContent = value + (element.dataset.suffix || '');
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    }
+                };
+                window.requestAnimationFrame(step);
+            };
+
+            // Trigger number animation when stats come into view
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const statNumber = entry.target.querySelector('.stat-number');
+                        const value = statNumber.textContent.replace(/\D/g, '');
+                        const suffix = statNumber.textContent.replace(/[0-9]/g, '');
+                        statNumber.dataset.suffix = suffix;
+                        statNumber.textContent = '0' + suffix;
+                        animateValue(statNumber, 0, parseInt(value), 2000);
+                        statsObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            document.querySelectorAll('.stat-item').forEach(stat => {
+                statsObserver.observe(stat);
+            });
+        });
+    </script>
+
+</body>
 </html>

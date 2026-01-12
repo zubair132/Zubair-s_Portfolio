@@ -1,0 +1,13 @@
+# Vercel
+.vercel
+
+# MacOS
+.DS_Store
+
+# Editor directories
+.vscode
+.idea
+
+# Backup files
+index-modern.html
+modern-style.css
