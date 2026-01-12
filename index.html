@@ -782,6 +782,55 @@
             .floating-badge {
                 display: none;
             }
+
+            /* Mobile image optimization */
+            .hero-image,
+            .project-image-box img {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                object-fit: cover;
+            }
+
+            .project-image-box {
+                max-height: 250px;
+                overflow: hidden;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+                line-height: 1.2;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Additional mobile breakpoint for very small devices */
+        @media (max-width: 480px) {
+            .hero-image-wrapper {
+                width: 250px;
+                height: 250px;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .project-premium-card {
+                padding: 1rem;
+            }
+
+            .service-premium-card {
+                padding: 1.5rem;
+            }
+
+            img {
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                transform: translateZ(0);
+            }
         }
 
         /* ================================================
@@ -1114,7 +1163,7 @@
             <div class="hero-image-container">
                 <div class="hero-image-wrapper">
                     <div class="hero-image-bg"></div>
-                    <img src="images/Zubair.jpeg" alt="Zubair Ahmad - Senior React Native Developer" class="hero-image">
+                    <img src="images/Zubair.jpeg" alt="Zubair Ahmad - Senior React Native Developer" class="hero-image" loading="eager" width="500" height="500">
 
                     <div class="floating-badge badge-1">
                         <div class="badge-icon">🚀</div>
@@ -1235,7 +1284,7 @@
                 <!-- Project 1: CattleCare -->
                 <div class="project-premium-card">
                     <div class="project-image-box">
-                        <img src="images/CattleCare-project.jpeg" alt="CattleCare App">
+                        <img src="images/CattleCare-project.jpeg" alt="CattleCare App" loading="lazy" width="600" height="400">
                         <div class="project-badge-premium">AI/ML Powered</div>
                     </div>
                     <div class="project-content-box">
@@ -1258,7 +1307,7 @@
                 <!-- Project 2: Floty.ai -->
                 <div class="project-premium-card">
                     <div class="project-image-box">
-                        <img src="images/Floty-project.jpeg" alt="Floty.ai Fleet Management">
+                        <img src="images/Floty-project.jpeg" alt="Floty.ai Fleet Management" loading="lazy" width="600" height="400">
                         <div class="project-badge-premium">Enterprise</div>
                     </div>
                     <div class="project-content-box">
@@ -1281,7 +1330,7 @@
                 <!-- Project 3: Scanner App -->
                 <div class="project-premium-card">
                     <div class="project-image-box">
-                        <img src="images/Scaner-project.png" alt="QR & Barcode Scanner">
+                        <img src="images/Scaner-project.png" alt="QR & Barcode Scanner" loading="lazy" width="600" height="400">
                         <div class="project-badge-premium">Utility App</div>
                     </div>
                     <div class="project-content-box">
@@ -1303,7 +1352,7 @@
                 <!-- Project 4: Smart CUI -->
                 <div class="project-premium-card">
                     <div class="project-image-box">
-                        <img src="images/CUI-project.jpeg" alt="Smart CUI">
+                        <img src="images/CUI-project.jpeg" alt="Smart CUI" loading="lazy" width="600" height="400">
                         <div class="project-badge-premium">EdTech</div>
                     </div>
                     <div class="project-content-box">
@@ -1325,7 +1374,7 @@
                 <!-- Project 5: Petzapp -->
                 <div class="project-premium-card">
                     <div class="project-image-box">
-                        <img src="images/Petzapp-project.png" alt="Petzapp Social Platform">
+                        <img src="images/Petzapp-project.png" alt="Petzapp Social Platform" loading="lazy" width="600" height="400">
                         <div class="project-badge-premium">Social</div>
                     </div>
                     <div class="project-content-box">
@@ -1347,7 +1396,7 @@
                 <!-- Project 6: Teilim TR -->
                 <div class="project-premium-card">
                     <div class="project-image-box">
-                        <img src="images/Teilim-project.jpeg" alt="Teilim TR - Spiritual Psalms App">
+                        <img src="images/Teilim-project.jpeg" alt="Teilim TR - Spiritual Psalms App" loading="lazy" width="600" height="400">
                         <div class="project-badge-premium">Religious & Inspirational</div>
                     </div>
                     <div class="project-content-box">
